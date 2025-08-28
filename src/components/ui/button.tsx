@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Cybersecurity variants
+        cyber: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:from-primary/90 hover:to-accent/90 shadow-cyber",
+        secure: "bg-secure text-secure-foreground hover:bg-secure/90",
+        threat: "bg-threat-critical text-white hover:bg-threat-critical/90 animate-threat-blink",
+        hero: "bg-cyber-glow/20 border border-cyber-glow text-cyber-glow hover:bg-cyber-glow hover:text-background transition-all duration-300 animate-cyber-pulse",
       },
       size: {
         default: "h-10 px-4 py-2",

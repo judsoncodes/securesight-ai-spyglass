@@ -52,6 +52,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				// Cybersecurity threat colors
+				threat: {
+					critical: 'hsl(var(--threat-critical))',
+					high: 'hsl(var(--threat-high))',
+					medium: 'hsl(var(--threat-medium))',
+					low: 'hsl(var(--threat-low))'
+				},
+				secure: 'hsl(var(--secure))',
+				cyber: {
+					glow: 'hsl(var(--cyber-glow))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +103,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'cyber-pulse': {
+					'0%, 100%': {
+						opacity: '1',
+						boxShadow: '0 0 20px hsl(199 89% 48% / 0.3)'
+					},
+					'50%': {
+						opacity: '0.8',
+						boxShadow: '0 0 30px hsl(199 89% 48% / 0.5)'
+					}
+				},
+				'threat-blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
+				},
+				'scan-line': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'cyber-pulse': 'cyber-pulse 2s ease-in-out infinite',
+				'threat-blink': 'threat-blink 1s ease-in-out infinite',
+				'scan-line': 'scan-line 2s linear infinite'
 			}
 		}
 	},

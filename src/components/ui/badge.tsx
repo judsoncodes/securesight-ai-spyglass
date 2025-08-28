@@ -15,6 +15,23 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
+        success:
+          "border-transparent bg-success text-success-foreground hover:bg-success/80",
+        warning:
+          "border-transparent bg-warning text-warning-foreground hover:bg-warning/80",
+        // Cybersecurity threat badges
+        "threat-critical":
+          "border-transparent bg-threat-critical text-white animate-threat-blink",
+        "threat-high":
+          "border-transparent bg-threat-high text-white",
+        "threat-medium":
+          "border-transparent bg-threat-medium text-black",
+        "threat-low":
+          "border-transparent bg-threat-low text-black",
+        secure:
+          "border-transparent bg-secure text-black",
+        cyber:
+          "border-cyber-glow bg-cyber-glow/20 text-cyber-glow animate-cyber-pulse",
       },
     },
     defaultVariants: {
